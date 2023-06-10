@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2B2B2B;
+    font-size: 40px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+section {width: 100%;}
+
+nav,
+header,
+main,
+section {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+header {
+    height: 55vh;
+    text-align: center;
+}
+
+header a.reserva-link {
+    padding: 0 10px; 
+    background-color: #114F4A;
+    border-radius: 18px;
+    color: white;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: #1C1D1E;
+    width: 100vw;
+    padding: 2vw;
+}
+
+nav {
+    color: white;
+    background-color: #114F4A;
+    height: 19vh;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+}
+
+header h3 {
+    color: #114F4A;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+main section div {
+    width: 45.83%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+section div img {
+    width: 100%;
+    filter: opacity(40%);
+    transition: filter 1s
+}
+
+section div img:hover {
+    filter: opacity(100%)
+}
+
+
+main section {
+    justify-content: space-between;
+    display: flex;
+}
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header p,
+nav a,
+header a {
+    font-size: 18px;
+}
+
+nav a,
+header a {
+    color: white;
+}
+
+.reserva-texto {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    width: 150px;
+}
+
+header a:hover span.reserva-texto {
+    transform: scale(1.05);
+}
+
+nav span {
+    display: none;
+}
+
+.icon-cubiertos {
+    color: white;
+    font-size: 6vw;
+}
+
+.icon-cubiertos:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    nav div {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+    nav span {
+        display: inline;
+    }
+}
+
+@media (max-width: 769px) {
+    main section div {
+      width: 100%;
+    }
+  }
+
+section,
+video {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #114F4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+header a:hover,
+nav a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
